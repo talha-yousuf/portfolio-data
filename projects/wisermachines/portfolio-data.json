@@ -1,0 +1,55 @@
+{
+  "featured": "false",
+  "hidden": false,
+  "githubUrl": "",
+  "demoUrl": "",
+  "productPageUrl": "https://www.wisermachines.com/",
+  "docUrl": "wisermachines",
+  "thumbnailUrl": "",
+  "imageUrls": [""],
+  "videoUrls": [""],
+  "architectureDiagramUrls": [""],
+  "name": "WiserMachines",
+  "shortDescription": "IoT machine monitoring platform for factory shop-floor digitization.",
+  "description": [
+    "WiserMachines is a versatile IoT machine monitoring platform for the digitization of factory shop-floors. It gives industrial operators real-time visibility into machine performance, environment conditions, and production schedules, all mapped to the physical layout of their facilities.",
+    "The platform supports real-time IoT dashboards, factory mapping by workshops and zones, environment monitoring, maintenance and production scheduling, threshold-based alerts with push notifications, role-based access control, and actionable reporting."
+  ],
+  "architectureNotes": [
+    "MERN-stack web application extended with an embedded IoT layer. MQTT over an Eclipse Mosquitto broker handles real-time pub/sub communication between custom sensor nodes and the backend.",
+    "Node.js / Express.js backend bridges the MQTT broker and the React frontend, handling data ingestion, alert processing, report generation, and user management.",
+    "Dual database strategy: PostgreSQL for structured product and user data (accounts, roles, schedules), and MongoDB for high-volume, append-only sensor data.",
+    "Custom-built IoT sensor nodes with in-house firmware and PCBs designed in Altium Designer, deployed and tested in real factory environments.",
+    "Each client receives a tailored instance of the platform hosted on their internal on-site servers, ensuring data sovereignty and compatibility with industrial network constraints."
+  ],
+  "stack": [
+    "React",
+    "Angular",
+    "Redux",
+    "Material UI",
+    "Highcharts.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "PostgreSQL",
+    "MQTT",
+    "Eclipse Mosquitto",
+    "Altium Designer"
+  ],
+  "domains": [
+    "Industrial Automation",
+    "IoT",
+    "Enterprise SaaS",
+    "Factory Floor Management"
+  ],
+  "contribution": [
+    "Built customized, fully-responsive IoT portals using the MERN stack; implemented an early prototype using Angular.",
+    "Developed role-based authorization systems and real-time IoT dashboards for machine monitoring.",
+    "Built REST APIs using Node.js and Express.js; managed MongoDB and PostgreSQL databases.",
+    "Implemented data pipelines for IoT data ingestion, querying, and cleaning; organized sensor data from multiple sources and generated actionable reports for clients.",
+    "Contributed to firmware development for IoT sensor nodes, worked on PCB design and fabrication, and conducted hardware deployment and real-world testing in factory environments.",
+    "Shipped multiple customized instances to different industrial clients, hosted on their internal servers with tailored configurations.",
+    "Engaged with clients for weekly requirement gathering and translated evolving business requirements into technical features with the product team.",
+    "Collaborated with designers to align UI/UX designs with business needs."
+  ]
+}

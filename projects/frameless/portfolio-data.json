@@ -1,0 +1,53 @@
+{
+  "featured": "false",
+  "hidden": false,
+  "githubUrl": "",
+  "demoUrl": "",
+  "productPageUrl": "",
+  "docUrl": "frameless",
+  "thumbnailUrl": "",
+  "imageUrls": [""],
+  "videoUrls": [""],
+  "architectureDiagramUrls": [""],
+  "name": "Frameless — NFT Marketplace",
+  "shortDescription": "A multi-blockchain NFT marketplace where users can mint, buy, and sell NFTs. Built on ZkSync (L2 Ethereum), offering lower gas fees and faster transactions than mainnet.",
+  "description": [
+    "Frameless is a full-featured NFT trading platform built on ZkSync, a Layer 2 Ethereum scaling solution using ZK rollup technology. It allows creators and collectors to mint, list, buy, and sell NFTs with significantly reduced gas fees and faster finality compared to Ethereum mainnet. Users can configure collection parameters, set royalties, and manage their portfolios through a polished, responsive interface.",
+    "The platform consists of two applications: a customer-facing marketplace and an internal admin CMS. The marketplace covers the full user journey — from connecting a wallet and minting an NFT, to browsing listings, viewing activity logs, and completing purchases. Blockchain interactions are handled via the web3-react library, which manages wallet connections (e.g. MetaMask) and exposes utilities for signing and submitting transactions to the ZkSync network.",
+    "The admin CMS gives internal teams visibility into platform activity. Dashboards surface real-time analytics on listing volume and NFT popularity, while separate views handle user account management and transaction monitoring. Data visualizations are built with Recharts."
+  ],
+  "architectureNotes": [
+    "The frontend is split into two standalone React SPAs — the marketplace app and the admin CMS — each with its own Redux store and routing. Both apps share a common design system built with TailwindCSS, enforcing visual consistency across the platform.",
+    "Blockchain interactions follow an async, wallet-first pattern: the user connects their wallet via web3-react, which provides the signer context used to call smart contract functions (minting, transfers, purchases) against the ZkSync network. Transaction state and error handling are managed client-side.",
+    "Both applications are containerized with Docker and hosted on self-hosted Linux servers. CI/CD is handled via Jenkins pipelines that run automated tests and deploy on merge."
+  ],
+  "stack": [
+    "React",
+    "Redux",
+    "TailwindCSS",
+    "Formik",
+    "web3-react",
+    "Recharts",
+    "Docker",
+    "Jenkins",
+    "ZkSync",
+    "Ethereum"
+  ],
+  "domains": [
+    "Blockchain",
+    "Web3",
+    "NFT",
+    "DeFi",
+    "Digital Collectibles",
+    "E-Commerce"
+  ],
+  "contribution": [
+    "Planned and estimated the full frontend scope of the project as the full-stack developer responsible for all client-side delivery.",
+    "Built the design system from scratch — layout, reusable components, and custom styling — ensuring consistent UI/UX across both apps.",
+    "Developed the customer-facing marketplace: item and collection creation forms, listing pages, activity logs, user profiles, product detail pages, and the landing page.",
+    "Integrated blockchain functionality using web3-react: wallet connection, NFT minting on ZkSync/ETH, and transaction workflows for buying and selling.",
+    "Built the admin CMS: dashboards for listing oversight, transaction monitoring, real-time analytics, user account management, and activity tracking.",
+    "Implemented data visualizations for admin dashboards using Recharts.",
+    "Conducted code reviews and carried out QA processes."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "featured": "true",
+  "hidden": false,
+  "githubUrl": "",
+  "demoUrl": "",
+  "productPageUrl": "https://ngageatwork.com",
+  "docUrl": "ngage",
+  "thumbnailUrl": "",
+  "imageUrls": [""],
+  "videoUrls": [""],
+  "architectureDiagramUrls": [""],
+  "name": "nGAGE",
+  "shortDescription": "AI-powered, gamified employee performance management platform for mid-to-large organizations.",
+  "description": [
+    "nGAGE is a B2B SaaS platform that helps mid-to-large organizations manage employee productivity, engagement, and growth in one place, available on iOS, Android, and web.",
+    "The platform features a points-and-rewards gamification system tied to task completion and challenges, with a real reward store, leaderboards, and a real-time feedback loop built into the rewards flow.",
+    "Productivity tracking covers working hours, break patterns, remote workforce support, leave management, and HRM data export, all without invasive monitoring.",
+    "Continuous feedback replaces annual reviews with structured, ongoing performance ratings, feedback history, anonymous mode, self-evaluations, proactive feedback requests, and 360-degree review support.",
+    "AI-driven analytics surface performance trends and actionable insights, while MBTI personality integration gives managers visibility into team dynamics and collaboration patterns.",
+    "Personalized learning paths are tailored per employee based on role, performance data, and goals, enabling targeted upskilling rather than generic company-wide training."
+  ],
+  "architectureNotes": [
+    "A microservices platform built on NestJS and deployed on AWS, serving a React web app and a cross-platform mobile app via REST and WebSockets.",
+    "A single API Gateway acts as the entry point for all client traffic, handling request routing, auth verification, and rate limiting centrally.",
+    "Each domain runs as an independent NestJS service: Auth, Feedback/Performance, Productivity/Attendance, Gamification/Engagement, Notifications, and Analytics.",
+    "Each service owns its own PostgreSQL database, keeping data concerns isolated by domain, with schemas optimized for both read-heavy analytics and write-heavy feedback collection.",
+    "The Notifications service uses WebSockets to push live updates to clients, enabling instant feedback alerts, leaderboard changes, and challenge completions without polling."
+  ],
+  "stack": ["React", "NestJS", "PostgreSQL", "AWS"],
+  "domains": [
+    "HR Tech",
+    "B2B SaaS",
+    "Enterprise Software",
+    "Employee Performance Management",
+    "Gamification",
+    "Productivity Tracking",
+    "Continuous Feedback",
+    "Team Analytics",
+    "Leave Management"
+  ],
+  "contribution": [
+    "Designed and implemented RESTful APIs and NestJS microservices on AWS across several feature domains.",
+    "Built real-time notification pipelines using WebSockets.",
+    "Designed PostgreSQL schemas across multiple service domains, optimized for read-heavy analytics and write-heavy feedback collection.",
+    "Built out the full React UI across all major feature areas.",
+    "Owned features end-to-end from database schema through API to rendered UI."
+  ]
+}
